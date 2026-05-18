@@ -20,4 +20,4 @@ app.get('/', (req, res) => res.json({ message: 'API is running...' }));
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log('Server running on port 5001'));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
